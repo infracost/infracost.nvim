@@ -21,7 +21,7 @@ Supports Terraform (`.tf`, `.hcl`) and CloudFormation (YAML/JSON).
 ## Requirements
 
 - Neovim >= 0.10
-- [infracost-ls](https://github.com/infracost/infracost) on your `$PATH`
+- [infracost-ls]([https://github.com/infracost/lsp](https://github.com/infracost/lsp/releases)) on your `$PATH`
 
 ## Installation
 
