@@ -4,7 +4,7 @@ Neovim plugin for [Infracost](https://www.infracost.io/) — see cloud cost esti
 
 ![Neovim](https://img.shields.io/badge/Neovim-0.10%2B-green?logo=neovim)
 
-![](https://github.com/user-attachments/assets/3e12da93-52ac-45c5-bf04-7603f96f1aad)
+![infracost.nvim demo](https://github.com/user-attachments/assets/3e12da93-52ac-45c5-bf04-7603f96f1aad)
 
 
 ## Features
