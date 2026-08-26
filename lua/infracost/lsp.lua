@@ -28,6 +28,11 @@ local function client_config()
       clientName = "neovim",
       extensionVersion = version,
       supportsCodeLens = true,
+      -- Sent in both states, never omitted: the server reads an explicit value
+      -- as the user's decision and an absent one as "whatever the environment
+      -- says", so omitting false would let an INFRACOST_ENABLE_BICEP exported in
+      -- the shell that launched nvim override a user who has this off.
+      enableBicep = config.options.enable_bicep,
     },
     settings = {
       runParamsCacheTTLSeconds = config.options.cache_ttl,
