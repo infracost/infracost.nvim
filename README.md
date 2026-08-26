@@ -54,8 +54,20 @@ require("infracost").setup({
   server_path = "infracost-ls", -- path to infracost-ls binary
   cache_ttl = 300,              -- cache TTL in seconds
   debug = false,                -- enable LSP trace logging
+  enable_bicep = false,         -- estimate Bicep files
 })
 ```
+
+### Bicep
+
+Bicep cost estimates are off by default, because estimating a Bicep file
+compiles it — which requires the [Bicep CLI](https://aka.ms/bicep-install) on
+your `PATH` and downloads any modules the file references from their registries.
+Set `enable_bicep = true` to turn it on; because the option only exists in your
+own `setup()` call, no repository can switch it on for you.
+
+With it off, `.bicep` and `.bicepparam` files show no costs. ARM JSON —
+including JSON a Bicep build produced — is estimated either way.
 
 ## Commands
 
